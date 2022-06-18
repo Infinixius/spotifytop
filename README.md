@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://infinixi.us/spotifytop/assets/images/logo.png">
+	<img src="https://infinixi.us/spotifytop/assets/images/logo.png" style="width: 50%;">
 </p>
 
 spotifytop is a website that aims to index every artist, album, and song on Spotify, and make the top ones easily accessible.
