@@ -1,0 +1,19 @@
+body {
+	background-color: rgb(24, 26, 27);
+}
+
+body, tr {
+	color: white;
+}
+
+tr {
+	border-color: rgb(56, 61, 63);
+}
+
+a {
+	color: #55a9f7;
+}
+
+.sortedBy {
+	background-color: rgb(37, 75, 62) !important;
+}

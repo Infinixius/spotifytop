@@ -1,0 +1,25 @@
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+#info {
+	margin-top: 1vh;
+}
+
+#logo {
+	height: 1%;
+	width: auto;
+}
+
+.albumcover {
+	width: 32px;
+	height: auto;
+}
+
+.sortedBy {
+	background-color: rgb(231, 255, 247) !important;
+}
+
+.showArtistAlbums {
+	cursor: pointer;
+}

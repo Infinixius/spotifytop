@@ -1,0 +1,39 @@
+{
+	"port": 80,
+	"dev": false,
+	"webpath": "./web",
+	"webpathPublic": "/",
+	"apipath": "api",
+
+	"motdsendinterval": 5000,
+	"queryRowsLimit": 1000,
+	
+	"spotify": {
+		"domain": "",
+		"usercookie": "",
+		"clientid": "",
+		"clientsecret": "",
+		"token_reset_interval": 100000,
+		"scrape_interval": 1000
+	},
+
+	"postgres": {
+		"user": "",
+		"host": "",
+		"database": "",
+		"password": "",
+		"port": 5432
+	},
+
+	"logger": {
+		"enabled": true,
+		"format": "[%time][%TYPE] - %message",
+		"fileFormat": "./api/logs/%date-%time.log",
+		"directory": "./api/logs",
+
+		"info": true,
+		"warn": true,
+		"error": true,
+		"debug": true
+	}
+}

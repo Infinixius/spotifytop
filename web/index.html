@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/spotifytop/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>spotifytop</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link href="assets/css/index.css" rel="stylesheet">
+		<link id="darkMode" href="assets/css/dark.css" rel="stylesheet" disabled>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="p-2 bg-dark text-white">
+			<div class="container">
+				<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+					<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none">
+						<use xlink:href="#bootstrap"></use>
+						<img class="bi me-2" width="147" height="47" role="img" aria-label="Bootstrap" src="assets/images/logo.png">
+					</a>
+
+					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+						<li><a href="#" id="topAlbums" class="nav-link px-2 text-white">Top Albums</a></li>
+						<li><a href="#" id="topArtists" class="nav-link px-2 text-white">Top Artists</a></li>
+						<li><a href="#" id="topSongs" class="nav-link px-2 text-white">Top Songs</a></li>
+						<li><a href="#" id="topBillboard" class="nav-link px-2 text-white">Billboard 200</a></li>
+					</ul>
+
+					<div class="text-end">
+						<button id="toggleDarkMode" type="button" class="btn btn-primary">Dark Mode</button>
+						<button title="https://github.com/infinixius/spotifytop" id="starGitHub" type="button" class="btn btn-warning">Star on GitHub</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="info" class="container">
+			<p id="motd">Loading</p>
+			<i>tip: you can click on an artist's name in the albums or songs list to see all of their songs!</i>
+		</div>
+
+		<div class="container">
+			<table id="table" class="table">
+				<thead>
+					<tr id="tablehead">
+						<th class="sortedBy" scope="col">#</th>
+						<th scope="col"></th>
+						<th scope="col">Album Name</th>
+						<th scope="col">Artist</th>
+						<th scope="col">Plays</th>
+						<th scope="col">Release Date</th>
+						<th scope="col">Last Updated</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td><img class="albumcover" src="assets/images/unknownalbum.png"></td>
+						<td>Loading</td>
+						<td>Loading</td>
+						<td>Loading</td>
+						<td>Loading</td>
+						<td>Loading</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<footer>
+				<p>made with 💜 by <a href="https://infinixi.us">infinixius</a></p>
+				<p>this website and it's code is under the 🚀 <a href="https://mit-license.org/">MIT license</a></p>
+				<p>all ©️ belongs to <a href="https://www.spotify.com/us/legal/copyright-policy/">Spotify AB</a>, <a href="https://www.billboard.com/about-us/">Billboard Media, LLC</a>, <a href="https://www.rollingstone.com/">Rolling Stone, LLC</a>, and <a href="https://www.last.fm/">Last.fm Ltd</a>. all album art belongs to their respective owners</p>
+				<p>made possible with 🔨 <a href="https://jquery.com/">jquery</a>, <a href="https://getbootstrap.com/">bootstrap</a>, <a href="https://github.com/jsdom/jsdom">jsdom</a>, <a href="https://github.com/expressjs/express">express</a>, <a href="https://node-postgres.com/">node-pg</a>, <a href="https://github.com/lacymorrow/album-art">node-album-art</a>, and a lot more</p>
+			</footer>
+		</div>
+
+		<script src="assets/js/utils.js"></script>
+		<script src="assets/js/tableSort.js"></script>
+		<script src="assets/js/darkmode.js"></script>
+		<script src="assets/js/motd.js"></script>
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>
